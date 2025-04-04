@@ -1,0 +1,536 @@
+//* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;  /* Larger text */
+    line-height: 1.6;
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+header {
+    background-color: #f5f5f5;
+    color: #000;
+    padding: 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+h1, h2 {
+    font-size: 28px;  /* Bigger headings */
+    color: #000;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 18px;  /* Bigger paragraph text */
+    margin-bottom: 15px;
+}
+
+/* Increase Section Spacing */
+section {
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+}
+/* Education Section */
+#education {
+    background-color: rgba(255, 255, 255, 0.9); /* Light background */
+    color: #000; /* Black text */
+    padding: 40px;
+    border-radius: 10px;
+}
+
+/* Ensure Text is Black in Dark Mode */
+body.dark-theme #education {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly lighter in dark mode */
+    color: #000; /* Keep text black */
+}
+
+/* Education Timeline */
+.timeline-item {
+    background: rgba(255, 255, 255, 0.8);
+    color: #000;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Dark Mode - Keep Black Text */
+body.dark-theme .timeline-item {
+    background: rgba(255, 255, 255, 0.2);
+    color: #000;
+}
+/* About Section */
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #000;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+/* About Image */
+#about img {
+    width: 180px; /* Larger, well-sized image */
+    height: 180px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+#about img:hover {
+    transform: scale(1.1);
+}
+
+/* About Text */
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.about-text p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Download CV Button */
+.download-cv {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    color: #fff;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.download-cv:hover {
+    background-color: #00bfff;
+    transform: translateY(-2px);
+}
+
+/* Dark Mode Styling */
+body.dark-theme #about {
+    background-color: #111;
+    color: #fff;
+}
+
+body.dark-theme .download-cv {
+    background-color: #00bfff;
+}
+
+/* Education Section */
+#education {
+    background-color: rgba(255, 255, 255, 0.9); /* Light background */
+    color: #000; /* Black text */
+    padding: 40px;
+    border-radius: 10px;
+}
+
+/* Ensure Text is Black in Dark Mode */
+body.dark-theme #education {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly lighter in dark mode */
+    color: #000; /* Keep text black */
+}
+
+/* Education Timeline */
+.timeline-item {
+    background: rgba(255, 255, 255, 0.8);
+    color: #000;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Dark Mode - Keep Black Text */
+body.dark-theme .timeline-item {
+    background: rgba(255, 255, 255, 0.2);
+    color: #000;
+}
+
+/* Make Skills & Projects Spaced Out */
+/* Skill Bars - Updated */
+./* Skills Section */
+#skills {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(135deg, #121212, #1e1e1e);
+    color: #fff;
+    border-radius: 10px;
+}
+
+/* Skills Container */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Skill Box */
+.skill {
+    width: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.skill:hover {
+    transform: scale(1.1);
+}
+
+/* Skill Icons */
+.skill i {
+    font-size: 40px;
+    color: #00bfff; /* Neon blue color */
+    margin-bottom: 10px;
+}
+
+/* Skill Name */
+.skill span {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Skill Bar */
+.skill-bar {
+    width: 100%;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.2); /* Light gray for empty bars */
+    border-radius: 5px;
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Skill Bar Fill */
+.skill-bar::after {
+    content: "";
+    display: block;
+    height: 100%;
+    background: #00bfff; /* Blue bar for fill */
+    width: var(--skill-level);
+    transition: width 0.5s ease-in-out;
+}
+
+/* Dark Mode Adjustments */
+body.dark-theme #skills {
+    background: #111;
+}
+
+body.dark-theme .skill-bar {
+    background: rgba(255, 255, 255, 0.3); /* Lighter gray for dark theme */
+}
+
+body.dark-theme .skill-bar::after {
+    background: #38362f; /* Yellow fill for dark mode */
+}
+
+/* Skill Bars Specific Adjustments */
+.skill .skill-bar[data-skill="html"]::after {
+    background: #ff6347; /* HTML bar color */
+}
+
+.skill .skill-bar[data-skill="css"]::after {
+    background: #264de4; /* CSS bar color */
+}
+
+.skill .skill-bar[data-skill="js"]::after {
+    background: #44412b; /* JavaScript bar color */
+}
+
+.skill .skill-bar[data-skill="python"]::after {
+    background: #306998; /* Python bar color */
+}
+
+.skill .skill-bar[data-skill="java"]::after {
+    background: #f8981d; /* Java bar color */
+}
+
+
+/* Bigger Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    font-size: 50px; /* Bigger icons */
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.3);
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    
+    h1, h2 {
+        font-size: 24px;
+    }
+    
+    .skill {
+        max-width: 100%;
+    }
+}
+/* Projects Section */
+#projects {
+    padding: 50px;
+    background: linear-gradient(135deg, #4f7680, #5e838a);
+    color: #fff;
+    text-align: center;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+/* Project Box */
+.project {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(87, 135, 141, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.project:hover img {
+    transform: scale(1.1);
+}
+
+/* Project Info Overlay */
+.project-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    background: rgba(74, 106, 116, 0.7);
+    color: #fff;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project:hover .project-info {
+    opacity: 1;
+}
+
+.project-info h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    font-size: 16px;
+}
+
+/* Project Image Caption */
+.project-info h3, .project-info p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Dark Mode Adjustments */
+body.dark-theme #projects {
+    background: #111;
+}
+
+body.dark-theme .project-info {
+    background: rgba(150, 122, 122, 0.8);
+}
+
+//* Interests Section Styling */
+#interests {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(135deg, #121212, #1e1e1e);
+    color: #fff;
+}
+
+/* Toggle Button Styling */
+#toggle-button {
+    background-color: #ff6347; /* Button color */
+    color: #fff;
+    padding: 15px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+#toggle-button:hover {
+    background-color: #ff4500; /* Darker shade on hover */
+}
+
+/* Hidden Class for Interests Container */
+.hidden {
+    display: none;
+}
+
+/* Interest Item Styling */
+.interest-item {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+    width: 200px;
+    background-color: #386868;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.interest-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.interest-item p {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.interest-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.interest-item:hover p {
+    color: #ff6347; /* Change text color on hover */
+}
+
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact input, #contact textarea {
+    width: 80%;
+    max-width: 400px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #424224;
+    border-radius: 5px;
+}
+
+#contact button {
+    background: #FFD700;
+    color: #2E8B57;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background: #070706;
+}
+
+/* General Styles for Social Icons */
+.social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.social-icons a {
+    font-size: 40px;
+    color: #2c3e50;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+
+.social-icons a:hover {
+    color: #fff;
+    transform: scale(1.2);
+    animation: dazzling 1s ease-in-out infinite;
+}
+
+.social-icons a:active {
+    color: #f39c12;
+    transform: scale(1.1);
+}
+
+/* Dazzling Animation */
+@keyframes dazzling {
+    0% {
+        color: #f39c12;
+        transform: scale(1.1);
+    }
+    25% {
+        color: #e74c3c;
+        transform: scale(1.2);
+    }
+    50% {
+        color: #8e44ad;
+        transform: scale(1.3);
+    }
+    75% {
+        color: #3498db;
+        transform: scale(1.2);
+    }
+    100% {
+        color: #2ecc71;
+        transform: scale(1.1);
+    }
+}
+footer {
+    background-color: #064e3b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

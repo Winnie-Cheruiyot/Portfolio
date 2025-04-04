@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <meta name="description" content="A personal portfolio showcasing my skills, projects, and interests.">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8d7xj1z5l5e5e5e5e5e5e5e5e5e5e5e5e5" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+
+<body>
+    <!----here is the header section---->
+    <header>
+        <h1>My Portfolio</h1>
+        <button class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+ <!---end of header section--->
+   
+ <section id="about">
+    <img src="profil.jpg" alt="Profile Picture">
+    <div class="about-text">
+        <h2>Hi, I'm Winnie Cheruiyot 👋</h2>
+        <p>
+            I am a passionate <strong>Front-End Developer, Project Manager, ICT Instructor, and Tech Enthusiast</strong>.
+            I thrive on creating innovative solutions and driving impactful projects.
+        </p>
+        <p>
+            My journey in technology is fueled by my love for solving problems, building user-friendly experiences, and 
+            mentoring others in the ICT field. 🚀
+        </p>
+        <a href="CV - WINNIE  CHERUIYOT .pdf" class="download-cv" download>📄 Download My CV</a>
+    </div>
+</section>
+
+
+    <section id="education" class="luminous">
+        <h2>Education & Academic Journey</h2>
+        <div class="timeline">
+            <div class="timeline-item glowing">
+                <span class="date">Feb 2025 - Present</span>
+                <p class="institution">Power Learn Project Academy - Software Development</p>
+            </div>
+            <div class="timeline-item glowing">
+                <span class="date">Jun 2019 - Nov 2019</span>
+                <p class="institution">Kitale Business College - Project Management</p>
+            </div>
+            <div class="timeline-item glowing">
+                <span class="date">2012 - 2015</span>
+                <p class="institution">University of Eldoret - BSc. Computer Science</p>
+            </div>
+        </div>
+        <p class="animated-text">Learning is a journey that never ends. My passion for technology drives me forward every day!</p>
+    </section>
+
+    <section id="skills">
+        <h2>Programming Languages</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <i class="bx bxl-html5"></i>
+                <span>HTML</span>
+                <div class="skill-bar" style="width: 80%;"></div>
+            </div>
+            <div class="skill">
+                <i class="bx bxl-css3"></i>
+                <span>CSS</span>
+                <div class="skill-bar" style="width: 70%;"></div>
+            </div>
+            <div class="skill">
+                <i class="bx bxl-javascript"></i>
+                <span>JavaScript</span>
+                <div class="skill-bar" style="width: 50%;"></div>
+            </div>
+            <div class="skill">
+                <i class="bx bxl-python"></i>
+                <span>Python</span>
+                <div class="skill-bar" style="width: 50%;"></div>
+            </div>
+            <div class="skill">
+                <i class="bx bxl-java"></i>
+                <span>Java</span>
+                <div class="skill-bar" style="width: 50%;"></div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <img src="card.jpg.png" alt="Project 1">
+                <div class="project-info">
+                    <h3>Project 1</h3>
+                    <p>designed with your brand identity in mind, it’s a key networking item that leaves a memorable impression on potential clients or partners..</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="marketing.jpg.png" alt="Project 2">
+                <div class="project-info">
+                    <h3>Project 2</h3>
+                    <p>Boost your business with digital marketing! Reach your audience online through SEO, social media, and targeted ad campaigns.</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="report.jpg.jpg"Project 3">
+                <div class="project-info">
+                    <h3>Project 3</h3>
+                    <p>an official record detailing a student's academic performance, including grades, courses taken, and graduation status..</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="game.jpg.png" alt="Project 4">
+                <div class="project-info">
+                    <h3>Project 4</h3>
+                    <p>creates and shares content online, engaging readers with informative, entertaining, or opinion-based posts across various topics..</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="interests">
+        <h2>Interests</h2>
+        <div id="interests-container">
+            <div class="interest-item">
+                <img src="robotti.jpg" alt="Creating Robots">
+                <p>Building robots and exploring AI technologies.</p>
+            </div>
+            <div class="interest-item">
+                <img src="visit.jpeg" alt="Visiting Places">
+                <p>Traveling to new places and experiencing different cultures.</p>
+            </div>
+            <div class="interest-item">
+                <img src="pilates.jpeg" alt="Pilates Workout">
+                <p>Staying healthy and fit with Pilates exercises.</p>
+            </div>
+            <div class="interest-item">
+                <img src="photography.jpeg" alt="Taking Photos">
+                <p>Capturing beautiful moments and landscapes through photography.</p>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form" action="https://script.google.com/macros/s/https://script.google.com/macros/s/AKfycbwqxACOxWfqcdKZAQknE7cvx3E2J12S4Cv4r4tBGxFhfKbQd3NWTzLOQTTK3SjdqIqj/exec/exec" method="POST">
+            <input type="text" name="firstname" placeholder="First Name" required>
+            <input type="text" name="lastname" placeholder="Last Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Brief message..." required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="social-icons">
+            <a href="https://www.youtube.com" target="_blank"><i class='bx bxl-youtube'></i></a>
+            <a href="https://github.com" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://twitter.com" target="_blank"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class='bx bxl-linkedin'></i></a>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Winnie Cheruiyot Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+<style>
+    body { background-color: #50C878; color: #FFD700; font-family: Arial, sans-serif; text-align: center; }
+    header { background-color: #2E8B57; padding: 20px; }
+    nav ul { list-style: none; display: flex; justify-content: center; }
+    nav ul li { margin: 0 15px; }
+    nav ul li a { color: #FFD700; text-decoration: none; }
+    .skill { position: relative; background: #FFD700; padding: 5px; border-radius: 5px; }
+    .skill-bar { background: #50C878; height: 10px; }
+    .rotating { animation: rotate 4s linear infinite; }
+    @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+</style>
+
+<script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('The details have been well received.');
+    });
+</script>
